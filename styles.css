@@ -1,0 +1,68 @@
+@charset "UTF-8"
+
+/*
+EN:
+This exercise was done purely for learning purposes, I'm not responsible for any inappropriate uses off this code.
+Feel free to learn and experiment with this Netflix website copy, but please do not use it for malicious reasons or pretend to be the Netflix group, it's a crime and it's not cool :(
+
+There will be comments in both Portuguese and English explaining each section of what I've done. The inspiration of doing this is from the Traversy Media channel on youtube, make sure to watch his content that is really great for Front-end developers students - in any level really.
+
+PT:
+Este exercício foi feito puramente para fins estudantis, não sou responsável pelo uso inapropriado desse código.
+Sinta-se livre para aprender e experimentar com esta cópia do site da Netflix, mas por favor, não use-a para intenções maliciosas ou finja ser o grupo Netflix, é crime e não é nada legal :(
+
+Terão comentários em inglês e português explicando cada sessão do que eu fiz. A inspiração de fazer isso veio do canal no youtube de Traversy Media (em inglês, é de gringo), certifique-se de assistir o conteúdo dele que é muito bom pra desenvolvedores front-end em qualquer nível!!
+*/ 
+
+:root {
+    --primary-color: #e50914;
+}
+
+
+/*little reset*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Okay here we have a controversial 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background: #000;
+    color: #999;
+
+}
+
+/* That will remove the symbols that show up by default on lists */
+/* Isso removerá os símbolos que aparecem antes do texto por definição*/
+ul{
+    list-style: none;
+}
+
+/* The color that titles will be*/
+/* Aqui define-se a cor dos títulos*/
+h1, h2, h3, h4 {
+    color: #fff;
+}
+
+/* The reason the tag "a" (links) aren't with the titles is the text-decoration, which is none here. If I wanted to use a strong tag after for the titles, it wouldn't affect the  links at all */
+/*  A razão pela qual a tag "a" (links) não está com os títulos é o acréscimo da tag "text-decoration", que é "nenhuma" aqui. Se eu quisesse utilizar a tag "strong" para os títulos (que torna negrito), mais tarde, não afetariam os links */
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* That means the margin will be the value of 0.5 (or half if you will) of the root font size, which is 16 by default. */
+/* A margem terá metade do tamanho do tamanho default da root. O valor é 16 por default */
+p{
+    margin: 0.5rem 0;
+}
+
+
+/* The images will take 100% of the containers */
+/* As imagens tomarão espaço de 100% dos containers das quais estarão inseridas */
+img {
+    width: 100%;
+}
