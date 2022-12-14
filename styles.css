@@ -26,7 +26,7 @@ Terão comentários em inglês e português explicando cada sessão do que eu fi
     padding: 0;
 }
 
-/*Okay here we have a controversial 
+/*Okay here we have a controversial*/ 
 body {
     font-family: Arial, Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -73,10 +73,24 @@ img {
     height: 93vh;
     position: relative;
     background: url('https://i.ibb.co/vXqDmnh/background.jpg');
+    opacity: 0.5;
 }
 
 .showcase-top {
-    position: relative;
+    margin: 0px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
     height: 90px;
 }
+
+.showcase-top img{
+    width: 170px;
+}
+
+.showcase-top a{
+    background-color: var(--primary-color);
+}
+
 
