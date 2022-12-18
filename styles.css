@@ -26,10 +26,10 @@ Terão comentários em inglês e português explicando cada sessão do que eu fi
     padding: 0;
 }
 
-/*Okay here we have a controversial*/ 
+/*Defining the font, background and the color of the text in the body*/ 
+/*Definindo a fonte, cor do plano de fundo e cor do texto no corpo*/
 body {
     font-family: Arial, Helvetica, sans-serif;
-    -webkit-font-smoothing: antialiased;
     background: #000;
     color: #999;
 
@@ -44,6 +44,7 @@ ul{
 /* The color that titles will be*/
 /* Aqui define-se a cor dos títulos*/
 h1, h2, h3, h4 {
+    font-size: 60px;
     color: #fff;
 }
 
@@ -52,11 +53,13 @@ h1, h2, h3, h4 {
 a {
     color: #fff;
     text-decoration: none;
+    font-size: 20px;
 }
 
 /* That means the margin will be the value of 0.5 (or half if you will) of the root font size, which is 16 by default. */
 /* A margem terá metade do tamanho do tamanho default da root. O valor é 16 por default */
 p{
+    font-size: 25px;
     color: #fff;
     margin: 0.5rem 0;
 }
@@ -68,14 +71,21 @@ img {
     width: 100%;
 }
 
-.showcase {
+
+/*The div "showcase" will have the following properties: the width, which will be 100% of the browser size of the client's browser, and 93% of the height of the preceding. The relative possition allows us to define the position the object has. The shorthand background is used only to attach the image url of the Netflix original site, who has a opacity that are written in our code too.*/
+/*A div de classe "showcase" terá as seguintes definições: o width, que é a largura, terá 100% do tamanho da janela de browser do qual o cliente estará utilizando para ver o site e 93% da altura do mesmo. A posição sera relativa para que seja possível definir a posição do objeto. O shorthand de background está sendo usado somente para colocar a url da imagem de fundo default da Netflix, também foi feita uma opacidade, para ornar com como é de fato.*/
+
+.background{
     width: 100%;
     height: 93vh;
     position: relative;
     background: url('https://i.ibb.co/vXqDmnh/background.jpg');
-    opacity: 0.5;
+}
+.showcase {
+    
 }
 
+/*The margin is for centering the flex box, so it matches the Netflix website*/
 .showcase-top {
     margin: 0px 60px;
     display: flex;
@@ -83,6 +93,14 @@ img {
     justify-content: space-between;
     
     height: 90px;
+}
+
+.showcase-content{
+    padding: 250px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .showcase-top img{
@@ -93,4 +111,13 @@ img {
     background-color: var(--primary-color);
 }
 
+.cta-form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
+input{
+    width: 300px;
+    height: 40px;
+}
