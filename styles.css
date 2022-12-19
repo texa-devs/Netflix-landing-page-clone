@@ -1,4 +1,4 @@
-@charset "UTF-8"
+@charset "UTF-8";
 
 /*
 EN:
@@ -75,14 +75,11 @@ img {
 /*The div "showcase" will have the following properties: the width, which will be 100% of the browser size of the client's browser, and 93% of the height of the preceding. The relative possition allows us to define the position the object has. The shorthand background is used only to attach the image url of the Netflix original site, who has a opacity that are written in our code too.*/
 /*A div de classe "showcase" terá as seguintes definições: o width, que é a largura, terá 100% do tamanho da janela de browser do qual o cliente estará utilizando para ver o site e 93% da altura do mesmo. A posição sera relativa para que seja possível definir a posição do objeto. O shorthand de background está sendo usado somente para colocar a url da imagem de fundo default da Netflix, também foi feita uma opacidade, para ornar com como é de fato.*/
 
-.background{
+.showcase{
     width: 100%;
     height: 93vh;
     position: relative;
     background: url('https://i.ibb.co/vXqDmnh/background.jpg');
-}
-.showcase {
-    
 }
 
 /*The margin is for centering the flex box, so it matches the Netflix website*/
@@ -95,12 +92,27 @@ img {
     height: 90px;
 }
 
+.main-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px, 0px, 30px, 0px;
+}
+
 .showcase-content{
-    padding: 250px;
+    padding: 120px;
     display: flex;
     align-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.text-showcase-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 25px;
 }
 
 .showcase-top img{
@@ -117,7 +129,36 @@ img {
     flex-direction: column;
 }
 
+.cta-form-link{
+    padding-bottom: 20px;
+}
+
+.input-cta-button{
+    display: flex;
+    height: 70px;
+}
+
+.input-cta-button > input{
+    border: 0px;
+    border-radius: 2px 0px 0px 2px;
+}
+
+.input-cta-button > button{
+    border: 0px;
+    border-radius: 0px 2px 2px 0px;
+}
+
 input{
-    width: 300px;
-    height: 40px;
+    width: 500px;
+    height: 100%;
+}
+
+#cta-getStarted{
+    color: #fff;
+    font-size: 20px;
+
+    height: 100%;
+    width: 200px;
+    background-color: var(--primary-color);
+    border: 0px;
 }
